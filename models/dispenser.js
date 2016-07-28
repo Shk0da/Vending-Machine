@@ -110,7 +110,7 @@ models.Dispenser = (function () {
             var returnCoinSet = [];
             var sum = currentAmount;
 
-            var ten = Math.floor((sum % 100) / 10);
+            var ten = Math.floor((sum % 1000) / 10);
             for (i = 0; i < ten; i++) {
                 coin = new models.Coin(10);
                 returnCoinSet.push(coin);
